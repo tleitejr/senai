@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>PI - Formulário</title>
+</head>
+<body>
+    <br>
+        <div class='container'>
+            <br>
+            <fieldset>
+                <legend><h1>PI - Formulário</h1></legend>
+                <form onsubmit="validar_campos()" action="action_cliente.php" method="post" id='form-contato' enctype='multipart/form-data'>
+                    <label for=""> Nome </label>
+                    <input class="form-control mr-sm-2" type="text" placeholder="Informe o seu Nome" id="nome"><br>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="form-group">
+                         <label>CPF ou CNPJ</label>
+                           <input type="text" class="form-control pula" id="cpf" maxlength="12" name="cpf" placeholder="CPF/CNPJ" pattern="/[0-9]{3}[.]?[0-9]{3}[.\-\/]?[0-9]{2}" maxlength="14" onkeyup="mascara_cpf()">
+                        </div>
+                     </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                         <label>Telefone</label>
+                           <input type="text" onkeyup="mascara_tel()" class="form-control pula" id="tel" maxlength="12" name="tel" placeholder="Telefone">
+                        </div>
+                     </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                         <label>Celular</label>
+                           <input type="text" class="form-control pula" onkeyup="mascara_cel()" id="cel" maxlength="12" name="cel" placeholder="Celular">
+                        </div>
+                     </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                         <label>Endereço</label>
+                           <input type="text" class="form-control pula" id="endereço" name="endereço" placeholder="Informe o seu Endereço">
+                        </div>
+                     </div>
+                          <div class="col-md-2">
+                               <div class="form-group">
+                                <label>CEP</label>
+                                  <input type="text" class="form-control pula" id="cep" maxlength="12" name="cep" placeholder="CEP">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                           <div class="form-group">
+                               <label>Rua, Logradouro, Travessa <span>*</span> <span id='mensagem'></span></label>
+                                 <input type="text" class="form-control pula" id="rua" name="rua" placeholder="Rua, Logradouro, Travessa" required>
+                            </div>
+                          </div>
+                          <div class="col-md-1">
+                           <div class="form-group">
+                               <label>Número</label>
+                                 <input type="text" class="form-control pula" id="numero" name="numero" placeholder="Nº">
+                            </div>
+                          </div>
+                      
+                      <div class="col-md-2">
+                        <div class="form-group">
+                            <label>Bairro</label>
+                              <input type="text" class="form-control pula" id="bairro" name="bairro" placeholder="Informe o Bairro">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                           <label>Cidade</label>
+                              <input type="text" class="form-control pula" id="cidade" name="cidade" placeholder="Informe a Cidade">
+                        </div>
+                      </div>
+                      <div class="col-md-1">
+                       <div class="form-group">
+                            <label>UF</label>
+                              <input type="text" class="form-control pula" id="uf" maxlength="2" name="uf" placeholder="UF">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                       <div class="form-group">
+                            <label>Complemento</label>
+                              <input type="text" class="form-control pula" id="complemento" name="complemento" placeholder="Informe o Complemento do Endereço">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id='botao'> 
+                          <i class="fa fa-floppy-o"></i> Cadastrar
+                        </button>
+                      </div>
+                </form>
+            </fieldset>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+        <script src="cep.js"></script>
+    </form>
+    <script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
