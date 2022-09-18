@@ -1,0 +1,59 @@
+body {
+    background-size: cover;
+    background-image: url("https://wallup.net/wp-content/uploads/2016/01/209729-nature-landscape-mountain-forest.jpg");
+    
+
+}
+
+nav img {
+    width: 95%;
+
+
+}
+
+div {
+    background-color: transparent;
+}
+
+h3 {
+    color: white;
+}
+
+h5 {
+    text-align: center;
+    color: white;
+}
+
+header hr {
+    background-color: white;
+
+}
+
+
+nav a {
+    color: white;
+    word-spacing: 30px;
+
+}
+
+body table tr td {
+    text-align: center;
+    background-color: white;
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+
+}
+
+p {
+    color: white;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}

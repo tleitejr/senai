@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+
+}
+
+nav img {
+    width: 95%;
+
+}
+
+div {
+    background-color: transparent;
+
+}
+
+div p {
+    color: white;
+
+}
+h3 {
+    color: white;
+
+}
+
+h5 {
+    text-align: center;
+    color: white;
+
+}
+
+header hr {
+    background-color: white;
+
+}
+
+
+nav a {
+    color: white;
+    word-spacing: 30px;
+
+}
+
+body table tr td {
+    text-align: center;
+    background-color: white;
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
+
+footer p {
+    text-align: center;
+
+}
