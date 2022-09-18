@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Player de Vídeo</title>
+</head>
+<body>
+
+    <video id="playerCustomizado" width="600" poster="imagens/Pôster.jpg">
+        <source src="media/Finding Nemo 3D Trailer.mp4" type="video/mp4">
+    </video>
+    
+    <div>
+        <button type="button" class="btn btn-primary" onclick="playpause()">Play/Pause</button>
+        <button type="button" class="btn btn-primary" onclick="amplia()">Ampliar</button>
+        <button type="button" class="btn btn-primary" onclick="reduz()">Reduzir</button>
+        <button type="button" class="btn btn-primary" onclick="normal()">Tamanho normal</button>
+        <button type="button" class="btn btn-primary" onclick="cheia()">Tela cheia</button>
+        <button type="button" class="btn btn-primary" onclick="mais()">Volume +</button>
+        <button type="button" class="btn btn-primary" onclick="menos()">Volume -</button>
+        <button type="button" class="btn btn-primary" onclick="mute()">Mute</button>
+    </div>
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
