@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    position: relative;
+    text-align: center;
+    
+}
+
+form{
+    background-color: white;
+    text-align: center;
+    width: 32%;
+    position: relative;
+    left: 38%;
+}
